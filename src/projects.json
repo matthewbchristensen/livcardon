@@ -1,0 +1,19 @@
+{
+  "homePage": { 
+    "front-picture": "Exaggerated_Figures/IMG_2522.jpg" 
+  },
+  "projects": [
+    { 
+      "projectName": "3D Work", 
+      "listOfWork": ["3D_Work/IMG_9336.jpg", "3D_Work/IMG_9350.jpg", "3D_Work/IMG_9358.jpg"]
+    },
+    { 
+      "projectName": "Exaggerated Figures", 
+      "listOfWork": ["Exaggerated_Figures/IMG_1540.jpg", "Exaggerated_Figures/IMG_2522.jpg", "Exaggerated_Figures/IMG_2524.jpg", "Exaggerated_Figures/IMG_2525.jpg", "Exaggerated_Figures/IMG_2698.jpg", "Exaggerated_Figures/IMG_2700.jpg", "Exaggerated_Figures/IMG_2701.jpg", "Exaggerated_Figures/IMG_2719.jpg", "Exaggerated_Figures/IMG_2720.jpg", "Exaggerated_Figures/IMG_2721.jpg", "Exaggerated_Figures/IMG_2723.jpg"]
+    },
+    { 
+      "projectName": "Other Figures", 
+      "listOfWork": ["Other_Figures/IMG_2526.jpg", "Other_Figures/IMG_2527.jpg", "Other_Figures/IMG_2528.jpg"]
+    }
+  ]
+}
