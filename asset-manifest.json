@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/livcardon/static/css/main.a5e555bf.css",
-    "main.js": "/livcardon/static/js/main.3d208e59.js",
+    "main.js": "/livcardon/static/js/main.a1c4c0b7.js",
     "index.html": "/livcardon/index.html",
     "main.a5e555bf.css.map": "/livcardon/static/css/main.a5e555bf.css.map",
-    "main.3d208e59.js.map": "/livcardon/static/js/main.3d208e59.js.map"
+    "main.a1c4c0b7.js.map": "/livcardon/static/js/main.a1c4c0b7.js.map"
   },
   "entrypoints": [
     "static/css/main.a5e555bf.css",
-    "static/js/main.3d208e59.js"
+    "static/js/main.a1c4c0b7.js"
   ]
 }
