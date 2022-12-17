@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useEffect, useRef } from "react";
 import { Outlet, Link } from "react-router-dom";
 import ExpandableNav from "../components/ExpandableNav";
 import ProjectPageSelector from "../components/ProjectPageSelector";
@@ -10,8 +11,19 @@ const Layout = () => {
   const [selectedWork, changeSelectedWork] = useState(0);
   const location = useLocation();
   var projectsCollapsed = <div className="menu-link top-level-nav">PROJECTS</div>;
+  
+  let linksList = useRef();
+  useEffect(() => {
+    for (let i = 0; i < linksList.current.children.length; i++) {
+      if (linksList?.current?.children[i].querySelector("span").innerHTML == location?.state?.project?.projectName) {
+        linksList.current.children[i].querySelector("span").classList.add("active-project");
+      } else {
+        linksList.current.children[i].querySelector("span").classList.remove("active-project");
+      }
+    }
+  });
 
-  var expandedItems = <ul className="bottom-level-nav-list">
+  let expandedItems = <ul className="bottom-level-nav-list" ref={ linksList }>
     { PictureFiles.projects.map((p) => 
       <li key={ p.projectName }>
         <Link 
@@ -32,7 +44,7 @@ const Layout = () => {
       </li>
     )}
   </ul>;
-
+  
   return (
     <div className="full-screen-layout">
       <nav>

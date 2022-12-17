@@ -12,7 +12,7 @@ const ExpandableNav = ({ CollapsedView, ExpandedItems, IsExpanded, ToggleCollaps
       >
         { CollapsedView }
       </div>
-      { IsExpanded ? <div>{ExpandedItems}</div> : false }
+      <div className={ IsExpanded ? "expand-animation expanded" : "collapse-animation collapsed"}>{ExpandedItems}</div>
 
     </div>
   );
