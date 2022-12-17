@@ -7,7 +7,7 @@ const PictureLists = () => {
   return (
     <div>
       <img 
-        src={ "/photos/" + location.state.project?.listOfWork[location.state.pageNumber]} 
+        src={ process.env.PUBLIC_URL + "/photos/" + location.state.project?.listOfWork[location.state.pageNumber]} 
         alt={location.state.project.projectName + "-" + (location.state.pageNumber + 1)}
       />
     </div>

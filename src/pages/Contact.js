@@ -5,14 +5,14 @@ const Contact = () => {
   return (
     <>
       <iframe 
-        src={ "/photos/" + PictureFiles.aboutCv.resume} 
+        src={ process.env.PUBLIC_URL + "/photos/" + PictureFiles.aboutCv.resume} 
         title="Resume"
         className="pdf"
       >
       </iframe>
       <img 
-        src={ "/photos/" + PictureFiles.aboutCv.portrait} 
-        alt={"/photos/" + PictureFiles.aboutCv.portrait}
+        src={ process.env.PUBLIC_URL + "/photos/" + PictureFiles.aboutCv.portrait} 
+        alt={ process.env.PUBLIC_URL + "/photos/" + PictureFiles.aboutCv.portrait}
         className="pdf"
       />
       <p className="about-paragraph">{ PictureFiles.aboutCv.artistStatement }</p>

@@ -4,8 +4,8 @@ import PictureFiles from "../projects.json";
 const Home = () => {
   return (
     <img 
-      src={ "/photos/" + PictureFiles.homePage["front-picture"]} 
-      alt={"/photos/" + PictureFiles.homePage["front-picture"]}
+      src={ process.env.PUBLIC_URL + "/photos/" + PictureFiles.homePage["front-picture"]} 
+      alt={ process.env.PUBLIC_URL + "/photos/" + PictureFiles.homePage["front-picture"]}
     />
   );
 };

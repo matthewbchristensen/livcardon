@@ -20,7 +20,7 @@ const Layout = () => {
       } else {
         linksList.current.children[i].querySelector("span").classList.remove("active-project");
       }
-    }
+    } 
   });
 
   let expandedItems = <ul className="bottom-level-nav-list" ref={ linksList }>
